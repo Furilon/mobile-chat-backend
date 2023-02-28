@@ -1,0 +1,25 @@
+{
+  "name": "mobile-chat-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Furilon/mobile-chat-backend.git"
+  },
+  "author": "Mykyta Medvediev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Furilon/mobile-chat-backend/issues"
+  },
+  "homepage": "https://github.com/Furilon/mobile-chat-backend#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "socket.io": "^4.6.1"
+  }
+}
