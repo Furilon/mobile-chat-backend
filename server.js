@@ -5,5 +5,11 @@ const io = require("socket.io")(3000, {
 });
 
 io.on("connection", (socket) => {
-  console.log(socket.id);
+  socket.on("send-message", (message, room) => {
+    if (!room) {
+      socket.emit("Room is not provided.");
+    } else {
+      socket.to(room).emit("receive-message", message);
+    }
+  });
 });
